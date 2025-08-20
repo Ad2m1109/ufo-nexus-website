@@ -1,4 +1,4 @@
- // Smooth scrolling for navigation links
+// Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -43,4 +43,23 @@
             section.style.transform = 'translateY(20px)';
             section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(section);
+        });
+
+        // Back to top button logic
+        const backToTopBtn = document.getElementById('back-to-top-btn');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+
+        backToTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });

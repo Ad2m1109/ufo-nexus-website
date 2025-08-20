@@ -12,11 +12,34 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo">UFO</div>
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- UFO Dome -->
+                    <ellipse cx="100" cy="80" rx="60" ry="25" fill="#7dd55c"/>
+                    <ellipse cx="100" cy="75" rx="55" ry="22" fill="#9ee378"/>
+                    <ellipse cx="100" cy="70" rx="50" ry="20" fill="none" stroke="#7dd55c" stroke-width="3"/>
+                    
+                    <!-- UFO Base -->
+                    <ellipse cx="100" cy="95" rx="70" ry="15" fill="#7dd55c"/>
+                    <ellipse cx="100" cy="92" rx="65" ry="12" fill="#9ee378"/>
+                    
+                    <!-- UFO Lights -->
+                    <circle cx="70" cy="95" r="3" fill="#ffffff"/>
+                    <circle cx="100" cy="95" r="3" fill="#ffffff"/>
+                    <circle cx="130" cy="95" r="3" fill="#ffffff"/>
+                    
+                    <!-- Light Beam -->
+                    <path d="M 85 110 L 115 110 L 125 160 L 75 160 Z" fill="#7dd55c" opacity="0.3"/>
+                    
+                    <!-- Top Light -->
+                    <circle cx="100" cy="60" r="4" fill="#ffffff"/>
+                </svg>
+                UFO NEXUS
+            </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#project">FUO Format</a></li>
-                <li><a href="#founders">Team</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -25,10 +48,10 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>UFO – The Future of Data, Today</h1>
+            <h1>UFO — The Future of Data, Today</h1>
             <h2>We don't just manage data: we redefine the way humanity innovates. UFO transcends traditional computing limits to create a sustainable, globally accessible ecosystem.</h2>
             <div class="cta-buttons">
-                <a href="#project" class="btn btn-primary">Discover FUO Format</a>
+                <a href="#projects" class="btn btn-primary">Discover FUO Format</a>
                 <a href="#contact" class="btn btn-secondary">Join the Revolution</a>
             </div>
         </div>
@@ -37,27 +60,86 @@
     <!-- About Section -->
     <section id="about">
         <h2 class="section-title">About UFO</h2>
-        <div class="about-content">
-            <p>
-                UFO is the visionary project that reinvents the digital universe. Designed for countries with limited resources and for the entire world, it offers intelligent, ultra-compressed, instantly decompressible data management while ensuring security and integrity.
-            </p>
-            <br>
-            <p>
-                Our mission goes beyond technology: we redirect global resources from mere computing power toward pure innovation, making our planet a greener and smarter space. Founded by 
-                <span class="founders-highlight">Youssef Borgi, Adam Youssfi, and Youssef Gaaliche</span>.
-            </p>
+        <div class="about-grid">
+            <div class="about-item">
+                <div class="about-icon">🎯</div>
+                <h3>Our Vision</h3>
+                <p>UFO is the visionary project that reinvents the digital universe. We redirect global resources from mere computing power toward pure innovation, making our planet a greener and smarter space.</p>
+            </div>
+            
+            <div class="about-item">
+                <div class="about-icon">🚀</div>
+                <h3>Our Goal</h3>
+                <p>To make intelligent, ultra-compressed, instantly decompressible data management accessible worldwide, especially for countries with limited resources, while ensuring security and integrity.</p>
+            </div>
+            
+            <div class="about-item">
+                <div class="about-icon">🌟</div>
+                <h3>Our Future</h3>
+                <p>Building a sustainable, globally accessible ecosystem where technology transforms the world into a smarter, more sustainable place. Founded by <span class="founders-highlight">Youssef Borgi, Adem Youssfi, and Youssef Gaaliche</span>.</p>
+            </div>
+        </div>
+
+        <div class="about-grid" style="margin-top: 4rem;">
+            <div class="about-item">
+                <div class="about-icon">🌍</div>
+                <h3>Global Accessibility</h3>
+                <p>Making major platforms accessible locally, especially for countries with limited resources through innovative data compression and management solutions.</p>
+            </div>
+            
+            <div class="about-item">
+                <div class="about-icon">🌱</div>
+                <h3>Sustainable Innovation</h3>
+                <p>Creating technology that reduces computational overhead and energy consumption while maximizing performance and accessibility.</p>
+            </div>
+            
+            <div class="about-item">
+                <div class="about-icon">💡</div>
+                <h3>Digital Revolution</h3>
+                <p>Transcending traditional computing limits to create a new paradigm in data management and digital accessibility.</p>
+            </div>
         </div>
     </section>
 
-    <!-- Projects Portfolio Section -->
-    <section id="project">
-        <h2 class="section-title">Our Revolutionary Projects</h2>
-        <p style="text-align: center; margin-bottom: 3rem; font-size: 1.1rem; opacity: 0.9;">
-            Transforming the digital landscape with groundbreaking innovations
-        </p>
+    <!-- Team Section -->
+    <section id="team">
+        <h2 class="section-title">Meet the Founders</h2>
+        <div class="founders-grid">
+            <div class="founder">
+                <div class="founder-avatar">YB</div>
+                <h3>Youssef Borgi</h3>
+                <p><strong>Visionary & Co‑Founder</strong></p>
+                <p>Leading the revolutionary vision of UFO and driving innovation in data management solutions.</p>
+                <a href="https://www.linkedin.com/in/borgi-youssef-a0745634a" target="_blank" class="founder-link">
+                    <span style="font-size: 0.9rem; color: #7dd55c;">🔗 LinkedIn Profile</span>
+                </a>
+            </div>
+            <div class="founder">
+                <div class="founder-avatar">AY</div>
+                <h3>Adem Youssfi</h3>
+                <p><strong>Lead Developer & Co‑Founder</strong></p>
+                <p>Architecting the future of data compression and building the technical foundation of UFO.</p>
+                <a href="https://www.linkedin.com/in/adem-youssfi-2289672a4" target="_blank" class="founder-link">
+                    <span style="font-size: 0.9rem; color: #7dd55c;">🔗 LinkedIn Profile</span>
+                </a>
+            </div>
+            <div class="founder">
+                <div class="founder-avatar">YG</div>
+                <h3>Youssef Gaaliche</h3>
+                <p><strong>AI Engineer & Co‑Founder</strong></p>
+                <p>Building intelligent systems for tomorrow and integrating AI with data management solutions.</p>
+                <a href="https://www.linkedin.com/in/gaaliche-youssef-184349182" target="_blank" class="founder-link">
+                    <span style="font-size: 0.9rem; color: #7dd55c;">🔗 LinkedIn Profile</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <!-- FUO Format - Flagship Project -->
-        <div class="project flagship-project">
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Our Revolutionary Project</h2>
+        
+        <div class="project">
             <div class="project-header">
                 <span class="project-badge">🚀 FLAGSHIP PROJECT</span>
                 <h3 class="project-title">FUO Format</h3>
@@ -65,168 +147,54 @@
             </div>
             
             <div class="project-description">
-                <p>UFO's revolutionary FUO format transcends traditional computing limits, offering 20-80% compression rates while maintaining instant decompression capabilities. Designed for global accessibility and sustainability.</p>
+                <p>UFO's revolutionary FUO format transcends traditional computing limits, offering 20-80% compression rates while maintaining instant decompression capabilities. Designed for global accessibility and sustainability, it represents the future of intelligent data management.</p>
             </div>
             
             <div class="features-grid">
                 <div class="feature">
                     <div class="feature-icon">📦</div>
                     <h4>20-80% Compression</h4>
-                    <p>Maximum file reduction without performance loss</p>
+                    <p>Maximum file reduction without performance loss, making data storage and transfer more efficient than ever.</p>
                 </div>
                 <div class="feature">
                     <div class="feature-icon">🔒</div>
                     <h4>Advanced Security</h4>
-                    <p>Digital safe with enterprise-grade protection</p>
+                    <p>Digital safe with enterprise-grade protection ensuring data integrity and confidentiality.</p>
                 </div>
                 <div class="feature">
                     <div class="feature-icon">⚡</div>
                     <h4>Instant Access</h4>
-                    <p>Ultra-compressed data with immediate decompression</p>
+                    <p>Ultra-compressed data with immediate decompression capabilities for seamless user experience.</p>
                 </div>
                 <div class="feature">
                     <div class="feature-icon">🌍</div>
                     <h4>Global Accessibility</h4>
-                    <p>Optimized for countries with limited resources</p>
+                    <p>Optimized for countries with limited resources, making technology accessible worldwide.</p>
                 </div>
                 <div class="feature">
                     <div class="feature-icon">☁️</div>
                     <h4>Smart Virtualization</h4>
-                    <p>Local and global cloud solutions integration</p>
+                    <p>Local and global cloud solutions integration for optimal performance and accessibility.</p>
                 </div>
                 <div class="feature">
                     <div class="feature-icon">🌱</div>
                     <h4>Eco-Friendly</h4>
-                    <p>Sustainable technology for a greener planet</p>
+                    <p>Sustainable technology that reduces energy consumption and creates a greener digital future.</p>
                 </div>
             </div>
 
             <div class="project-actions">
                 <a href="#contact" class="btn btn-primary">Request Demo</a>
-                <a href="#" class="btn btn-secondary">Technical Details</a>
-            </div>
-        </div>
-
-        <!-- Future Projects Section -->
-        <div class="future-projects">
-            <h3 style="text-align: center; margin: 3rem 0 2rem; font-size: 1.8rem; color: #7377c6;">Coming Soon</h3>
-            
-            <div class="projects-grid">
-                <div class="project-card upcoming">
-                    <div class="project-icon">🤖</div>
-                    <h4>UFO AI Assistant</h4>
-                    <p>Intelligent data management powered by advanced AI algorithms</p>
-                    <span class="status-badge">In Development</span>
-                </div>
-                
-                <div class="project-card upcoming">
-                    <div class="project-icon">🌐</div>
-                    <h4>UFO Cloud Platform</h4>
-                    <p>Global decentralized cloud infrastructure for emerging markets</p>
-                    <span class="status-badge">Research Phase</span>
-                </div>
-                
-                <div class="project-card upcoming">
-                    <div class="project-icon">🔧</div>
-                    <h4>UFO Developer Tools</h4>
-                    <p>SDK and APIs for integrating FUO format into any application</p>
-                    <span class="status-badge">Planning</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Innovation Pipeline -->
-        <div class="innovation-pipeline">
-            <div style="text-align: center; margin: 3rem 0;">
-                <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #ff77c6;">Innovation Pipeline</h3>
-                <p style="opacity: 0.8;">We're continuously developing new solutions to reshape the digital world</p>
-                <div style="margin-top: 2rem;">
-                    <a href="#contact" class="btn btn-secondary">Propose a Collaboration</a>
-                </div>
+                <a href="#contact" class="btn btn-secondary">Learn More</a>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us Section -->
-    <section>
-        <h2 class="section-title">Our Vision</h2>
-        <div class="why-grid">
-            <div class="why-item">
-                <div class="icon">🚀</div>
-                <h3>Innovation Beyond Computing</h3>
-                <p>Redirecting global resources from mere computing power toward pure innovation</p>
-            </div>
-            <div class="why-item">
-                <div class="icon">🌍</div>
-                <h3>Global Accessibility</h3>
-                <p>Making major platforms accessible locally, especially for countries with limited resources</p>
-            </div>
-            <div class="why-item">
-                <div class="icon">🌱</div>
-                <h3>Sustainable Future</h3>
-                <p>Creating technology that makes our planet greener and more intelligent</p>
-            </div>
-            <div class="why-item">
-                <div class="icon">💡</div>
-                <h3>Digital Revolution</h3>
-                <p>Transforming the world into a smarter, more sustainable place</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Founders Section -->
-    <section id="founders">
-        <h2 class="section-title">Meet the Founders</h2>
-        <div class="founders-grid">
-            <div class="founder">
-                <div class="founder-avatar">YB</div>
-                <h3>Youssef Borgi</h3>
-                <p><strong>Visionary & Co‑Founder</strong></p>
-                <p>Leading the revolutionary vision of UFO</p>
-                <a href="https://www.linkedin.com/in/borgi-youssef-a0745634a" target="_blank" class="founder-link">
-                    <span style="font-size: 0.9rem; color: #7377c6;">🔗 LinkedIn Profile</span>
-                </a>
-            </div>
-            <div class="founder">
-                <div class="founder-avatar">AY</div>
-                <h3>Adem Youssfi</h3>
-                <p><strong>Lead Developer & Co‑Founder</strong></p>
-                <p>Architecting the future of data compression</p>
-                <a href="https://www.linkedin.com/in/adem-youssfi-2289672a4" target="_blank" class="founder-link">
-                    <span style="font-size: 0.9rem; color: #7377c6;">🔗 LinkedIn Profile</span>
-                </a>
-            </div>
-            <div class="founder">
-                <div class="founder-avatar">YG</div>
-                <h3>Youssef Gaaliche</h3>
-                <p><strong>AI Engineer & Co‑Founder</strong></p>
-                <p>Building intelligent systems for tomorrow</p>
-                <a href="https://www.linkedin.com/in/gaaliche-youssef-184349182" target="_blank" class="founder-link">
-                    <span style="font-size: 0.9rem; color: #7377c6;">🔗 LinkedIn Profile</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA Section -->
-    <section>
-        <div class="final-cta">
-            <h2 class="section-title">Join Our Digital Revolution</h2>
-            <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9;">
-                We are building an ecosystem where innovation surpasses computing power, where citizens can access major platforms locally, and where technology transforms the world into a smarter, more sustainable place.
-            </p>
-            <div class="cta-buttons">
-                <a href="#contact" class="btn btn-primary">Explore UFO</a>
-                <a href="#" class="btn btn-secondary">Join the Revolution</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <!-- Footer/Contact -->
     <footer id="contact">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>UFO</h3>
+                <h3>UFO Solution</h3>
                 <p>Redefining the way humanity innovates</p>
                 <p style="margin-top: 1rem; font-style: italic; opacity: 0.8;">"Making our planet a greener and smarter space"</p>
                 <div class="social-links">
@@ -235,26 +203,32 @@
                     <a href="#" title="Twitter">tw</a>
                 </div>
             </div>
+            
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul class="footer-links">
                     <li><a href="#about">About UFO</a></li>
-                    <li><a href="#project">FUO Format</a></li>
-                    <li><a href="#founders">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#team">Meet the Team</a></li>
+                    <li><a href="#projects">FUO Format</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
+            
             <div class="footer-section">
                 <h3>Contact & Collaboration</h3>
-                <p>Email: youssefborgi85@gmail.com</p>
-                <p style="margin-top: 1rem;">To explore UFO, collaborate, or join our digital revolution</p>
+                <p><strong>Email:</strong> youssefborgi85@gmail.com</p>
+                <p style="margin-top: 1rem;">Ready to explore UFO, collaborate on revolutionary projects, or join our digital revolution?</p>
+                <p style="margin-top: 1rem; color: #7dd55c; font-weight: 600;">We're transforming the world into a smarter, more sustainable place.</p>
             </div>
         </div>
+        
         <div class="footer-bottom">
-            <p>&copy; 2025 UFO. Transforming the world into a smarter, more sustainable place.</p>
+            <p>&copy; 2025 UFO Solution. Transcending traditional computing limits to create a sustainable, globally accessible ecosystem.</p>
         </div>
     </footer>
 
-    <script src="main.js"></script>
+    <a id="back-to-top-btn" href="#" class="btn btn-primary">&uarr;</a>
+
+    <script src="script.js"></script>
 </body>
 </html>
