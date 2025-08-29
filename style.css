@@ -503,3 +503,74 @@
         html {
             scroll-behavior: smooth;
         }
+
+        /* Projects Section Horizontal Scroll */
+        .projects-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .projects-scroll {
+            display: flex;
+            gap: 2rem;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            padding: 1rem;
+        }
+
+        .projects-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        .project {
+            flex: 0 0 auto;
+            width: 400px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .project-preview {
+            position: relative;
+        }
+
+        .project-thumbnail {
+            width: 100%;
+            aspect-ratio: 3/2;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 1.5rem;
+        }
+
+        .scroll-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(125, 213, 92, 0.8);
+            border: none;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 2;
+            transition: background 0.3s;
+        }
+
+        .scroll-btn:hover {
+            background: rgba(125, 213, 92, 1);
+        }
+
+        .scroll-left {
+            left: 10px;
+        }
+
+        .scroll-right {
+            right: 10px;
+        }
