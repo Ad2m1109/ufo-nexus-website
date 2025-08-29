@@ -1,0 +1,84 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <radialGradient id="ufoGradient" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#4dd0e1;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#00bcd4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0097a7;stop-opacity:1" />
+    </radialGradient>
+    
+    <radialGradient id="domeGradient" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" style="stop-color:#80deea;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#00acc1;stop-opacity:1" />
+    </radialGradient>
+    
+    <linearGradient id="beamGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4dd0e1;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#00bcd4;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#4dd0e1;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <!-- Glow effects -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="beamGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background stars -->
+  <circle cx="30" cy="40" r="1" fill="#4dd0e1" opacity="0.6"/>
+  <circle cx="160" cy="30" r="1.5" fill="#00bcd4" opacity="0.7"/>
+  <circle cx="180" cy="60" r="1" fill="#4dd0e1" opacity="0.5"/>
+  <circle cx="25" cy="80" r="1" fill="#80deea" opacity="0.6"/>
+  <circle cx="170" cy="90" r="1" fill="#4dd0e1" opacity="0.8"/>
+  <circle cx="40" cy="160" r="1.5" fill="#00bcd4" opacity="0.6"/>
+  <circle cx="180" cy="150" r="1" fill="#4dd0e1" opacity="0.7"/>
+  
+  <!-- UFO beam -->
+  <path d="M 85 120 L 70 180 L 130 180 L 115 120 Z" 
+        fill="url(#beamGradient)" 
+        filter="url(#beamGlow)"
+        opacity="0.7"/>
+  
+  <!-- UFO main body (saucer) -->
+  <ellipse cx="100" cy="95" rx="55" ry="15" 
+           fill="url(#ufoGradient)" 
+           filter="url(#glow)"/>
+  
+  <!-- UFO body highlight -->
+  <ellipse cx="100" cy="92" rx="50" ry="12" 
+           fill="none" 
+           stroke="#4dd0e1" 
+           stroke-width="1" 
+           opacity="0.6"/>
+  
+  <!-- UFO dome -->
+  <ellipse cx="100" cy="80" rx="25" ry="20" 
+           fill="url(#domeGradient)" 
+           filter="url(#glow)"/>
+  
+  <!-- Dome highlight -->
+  <ellipse cx="95" cy="75" rx="8" ry="6" 
+           fill="#ffffff" 
+           opacity="0.3"/>
+  
+  <!-- UFO lights -->
+  <circle cx="75" cy="95" r="3" fill="#4dd0e1" filter="url(#glow)" opacity="0.8"/>
+  <circle cx="125" cy="95" r="3" fill="#4dd0e1" filter="url(#glow)" opacity="0.8"/>
+  <circle cx="100" cy="100" r="2" fill="#80deea" filter="url(#glow)" opacity="0.9"/>
+  
+  <!-- Additional small lights -->
+  <circle cx="85" cy="97" r="1.5" fill="#00bcd4" opacity="0.7"/>
+  <circle cx="115" cy="97" r="1.5" fill="#00bcd4" opacity="0.7"/>
+</svg>
